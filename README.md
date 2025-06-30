@@ -151,5 +151,3 @@ Let me know if you'd like this in a downloadable .md file or need help embedding
 
 
 
-
-Ask ChatGPT
