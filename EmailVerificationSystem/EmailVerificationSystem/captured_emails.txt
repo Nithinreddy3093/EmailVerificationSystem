@@ -1,0 +1,28 @@
+====== EMAIL CAPTURED ======
+Date: 2025-06-29 04:55:25
+To: your-email@example.com
+Subject: Your Verification Code
+Headers: MIME-Version: 1.0
+Content-type:text/html;charset=UTF-8
+From: GitHub Timeline Notifier <no-reply@github-timeline.com>
+Reply-To: no-reply@github-timeline.com
+X-Mailer: PHP/8.2.20
+X-Priority: 1
+
+Message: <html><body><h2>Email Verification</h2><p>Your verification code is: <strong style='font-size: 24px; color: #007bff;'>994445</strong></p><p>This code will expire in 10 minutes.</p><p>If you didn't request this code, please ignore this email.</p></body></html>
+==========================
+
+====== EMAIL CAPTURED ======
+Date: 2025-06-29 04:55:25
+To: your-email@example.com
+Subject: Confirm Unsubscription
+Headers: MIME-Version: 1.0
+Content-type:text/html;charset=UTF-8
+From: GitHub Timeline Notifier <no-reply@github-timeline.com>
+Reply-To: no-reply@github-timeline.com
+X-Mailer: PHP/8.2.20
+X-Priority: 1
+
+Message: <html><body><h2>Unsubscribe Confirmation</h2><p>To confirm unsubscription from GitHub Timeline updates, use this code:</p><p><strong style='font-size: 24px; color: #dc3545;'>994445</strong></p><p>This code will expire in 10 minutes.</p><p>If you didn't request this unsubscription, please ignore this email.</p></body></html>
+==========================
+

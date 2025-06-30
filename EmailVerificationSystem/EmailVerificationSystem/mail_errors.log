@@ -1,0 +1,2 @@
+[29-Jun-2025 04:54:01 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/runner/workspace/functions.php on line 115
+[29-Jun-2025 04:54:01 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/runner/workspace/functions.php on line 172

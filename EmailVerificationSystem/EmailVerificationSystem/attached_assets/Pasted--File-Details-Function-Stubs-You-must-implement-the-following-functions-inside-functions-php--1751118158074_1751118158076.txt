@@ -1,0 +1,108 @@
+📜 File Details & Function Stubs
+You must implement the following functions inside functions.php:
+
+function generateVerificationCode() {
+    // Generate and return a 6-digit numeric code
+}
+
+function registerEmail($email) {
+    $file = __DIR__ . '/registered_emails.txt';
+    // Save verified email to registered_emails.txt
+}
+
+function unsubscribeEmail($email) {
+    $file = __DIR__ . '/registered_emails.txt';
+    // Remove email from registered_emails.txt
+}
+
+function sendVerificationEmail($email, $code) {
+    // Send an email containing the verification code
+}
+
+function fetchGitHubTimeline() {
+    // Fetch latest data from https://www.github.com/timeline
+}
+
+function formatGitHubData($data) {
+    // Convert fetched data into formatted HTML
+}
+
+function sendGitHubUpdatesToSubscribers() {
+    $file = __DIR__ . '/registered_emails.txt';
+    // Send formatted GitHub timeline to registered users
+}
+🔄 CRON Job Implementation
+📌 You must implement a CRON job that runs cron.php every 5 minutes.
+📌 Do not just write instructions—provide an actual setup_cron.sh script inside src/.
+📌 Your script should automatically configure the CRON job on execution.
+
+🛠 Required Files
+setup_cron.sh (Must configure the CRON job)
+cron.php (Must handle sending GitHub updates via email)
+🚀 How It Should Work
+The setup_cron.sh script should register a CRON job that executes cron.php every 5 minutes.
+The CRON job must be automatically added when the script runs.
+The cron.php file should actually fetch GitHub timeline data and send emails to registered users.
+📩 Email Handling
+✅ The email content must be in HTML format (not JSON).
+✅ Use PHP's mail() function for sending emails.
+✅ Each email should include an unsubscribe link.
+✅ Unsubscribing should trigger a confirmation code before removal.
+✅ Store emails in registered_emails.txt (Do not use a database).
+
+❌ Disqualification Criteria
+🚫 Hardcoding verification codes.
+🚫 Using a database (use registered_emails.txt).
+🚫 Modifying anything outside the src/ directory.
+🚫 Changing function names.
+🚫 Not implementing a working CRON job.
+🚫 Not formatting emails as HTML.
+🚫 Using 3rd party libraries, only pure PHP is allowed.
+
+📌 Input & Button Formatting Guidelines
+📧 Email Input & Submission Button:
+The email input field must have name="email".
+The submit button must have id="submit-email".
+✅ Example:
+<input type="email" name="email" required>
+<button id="submit-email">Submit</button>
+🔢 Verification Code Input & Submission Button:
+The verification input field must have name="verification_code".
+The submit button must have id="submit-verification".
+✅ Example:
+<input type="text" name="verification_code" maxlength="6" required>
+<button id="submit-verification">Verify</button>
+🚫 Unsubscribe Email & Submission Button
+The unsubscribe input field must have name="unsubscribe_email".
+The submit button must have id="submit-unsubscribe".
+✅ Example:
+<input type="email" name="unsubscribe_email" required>
+<button id="submit-unsubscribe">Unsubscribe</button>
+🚫 Unsubscribe Code Input & Submission Button
+The unsubscribe code input field must have name="unsubscribe_verification_code".
+The submit button must have id="verify-unsubscribe".
+✅ Example:
+<input type="text" name="unsubscribe_verification_code">
+<button id="verify-unsubscribe">Verify</button>
+📩 Email Content Guidelines
+✅ Verification Email:
+Subject: Your Verification Code
+Body Format:
+<p>Your verification code is: <strong>123456</strong></p>
+Sender: no-reply@example.com
+📩 Email Content Guidelines
+⚠️ Note: The Subject and Body of the email must strictly follow the formats below, including the exact HTML structure.
+
+✅ GitHub Updates Email:
+Subject: Latest GitHub Updates
+Body Format:
+<h2>GitHub Timeline Updates</h2>
+<table border="1">
+  <tr><th>Event</th><th>User</th></tr>
+  <tr><td>Push</td><td>testuser</td></tr>
+</table>
+<p><a href="unsubscribe_url" id="unsubscribe-button">Unsubscribe</a></p>
+✅ Unsubscribe Confirmation Email:
+Subject: Confirm Unsubscription
+Body Format:
+<p>To confirm unsubscription, use this code: <strong>654321</strong></p>

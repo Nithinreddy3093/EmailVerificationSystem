@@ -1,0 +1,8 @@
+[2025-06-29 04:54:01] Attempting to send email to: your-email@example.com
+[2025-06-29 04:54:01] Failed to send email to: your-email@example.com - Error: session_start(): Session cannot be started after headers have already been sent
+[2025-06-29 04:54:01] Attempting to send email to: your-email@example.com
+[2025-06-29 04:54:01] Failed to send email to: your-email@example.com - Error: session_start(): Session cannot be started after headers have already been sent
+[2025-06-29 04:55:25] Attempting to send email to: your-email@example.com
+[2025-06-29 04:55:25] Mail function failed for: your-email@example.com (Email content captured locally)
+[2025-06-29 04:55:25] Attempting to send email to: your-email@example.com
+[2025-06-29 04:55:25] Mail function failed for: your-email@example.com (Email content captured locally)
